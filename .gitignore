@@ -1,5 +1,8 @@
 **/.idea
 **/venv
+**/output
+**/__pycache__
+*.tar
 
 # C extensions
 *.so

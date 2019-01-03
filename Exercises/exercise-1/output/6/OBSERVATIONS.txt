@@ -1,0 +1,2 @@
+The image with 8 level quantisation has higher color gradients and contrast compared to the one with 4 level quantistaion.
+The 8 level image is more refined than 4 level image.

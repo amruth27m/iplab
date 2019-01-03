@@ -1,0 +1,2 @@
+As the resolution decreases, images become more and more blurry. The sharpness and details in edges are lost with
+decreasing resolution

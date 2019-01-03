@@ -11,3 +11,5 @@ for x in range(0,img.shape[0]):
             maximum_pixel_value = img[x,y]
 print("Minimum pixel value is %d" %minimum_pixel_value)
 print("Maximum pixel value is %d" %maximum_pixel_value)
+cv2.imshow('Test',img)
+cv2.waitKey(0)

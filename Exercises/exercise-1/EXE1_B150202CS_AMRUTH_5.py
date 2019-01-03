@@ -1,5 +1,9 @@
 import cv2
 import numpy as np
+import os
+
+outputDir = os.path.join(os.path.abspath(os.path.curdir),'output/5/')
+
 
 img = cv2.imread('resources/sample.tif',cv2.IMREAD_GRAYSCALE)
 img = np.asarray(img, dtype="float")
@@ -23,6 +27,7 @@ for x in range(0, img.shape[0]):
             img[x,y] = 1
 
 cv2.imshow('quantised',img)
+cv2.imwrite(outputDir+'quantised.jpg',img)
 
 #Increasing intensity proportionally for visibility
 for x in range(0,img.shape[0]):
@@ -30,4 +35,5 @@ for x in range(0,img.shape[0]):
         img[x,y] = img[x,y]*255
 
 cv2.imshow('processed', img)
+cv2.imwrite(outputDir+'processed.jpg',img)
 cv2.waitKey(0)
